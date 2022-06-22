@@ -25,20 +25,20 @@ export class PuppetData {
     this.ModLoader = ModLoader;
     this.core = core;
     this.copyFields.push('pos');
-    this.copyFields.push('rot');
+    //this.copyFields.push('rot');
     //this.copyFields.push('accel_dir');
-    this.copyFields.push('unk1');
-    this.copyFields.push('unk2');
+    //this.copyFields.push('unk1');
+    //this.copyFields.push('unk2');
     //this.copyFields.push('base_accel');
     this.copyFields.push('state');
-    this.copyFields.push('r_input');
-    this.copyFields.push('prev_state');
-    this.copyFields.push('substate');
-    this.copyFields.push('flags');
+    //this.copyFields.push('r_input');
+    //this.copyFields.push('prev_state');
+    //this.copyFields.push('substate');
+    //this.copyFields.push('flags');
     //this.copyFields.push('fwd_spd');
     //this.copyFields.push('angles');
     //this.copyFields.push('health');
-    this.copyFields.push('inputs');
+    //this.copyFields.push('inputs');
     //this.copyFields.push('fludd_angle');
     //this.copyFields.push('yoshi_state');
     //this.copyFields.push('flutter');
@@ -94,7 +94,7 @@ export class PuppetData {
   }
 
   get state(): number {
-    return this.ModLoader.emulator.rdramReadPtr32(this.marioPtr, 0x7C);
+    return this.core.mario.state;
   }
   set state(flag: number) {
     this.ModLoader.emulator.rdramWrite32(this.pointer + 0x7C, flag);
