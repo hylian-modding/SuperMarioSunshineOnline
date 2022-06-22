@@ -1,0 +1,17 @@
+{
+  "name": "SuperMarioSunshineOnline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "SMSOnline.js",
+  "author": "Psi-Hate",
+  "credits": "denoflions",
+  "license": "GPL-3.0",
+  "core": "SuperMarioSunshine",
+  "modloader64_deps": {
+    "SuperMarioSunshine": "https://github.com/hylian-modding/Core-SuperMarioSunshine.git"
+  },
+  "modloader64_aliases": {},
+  "dependencies": {
+    "bson": "^4.5.4"
+  }
+}
